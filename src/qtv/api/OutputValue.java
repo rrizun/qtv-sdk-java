@@ -1,4 +1,4 @@
-package qtv;
+package qtv.api;
 
 import javax.script.*;
 

@@ -1,4 +1,4 @@
-package qtv;
+package qtv.api;
 
 import java.util.*;
 
@@ -13,6 +13,7 @@ public class JobValue {
   public String input_uri;
   public String status; // PENDING, SUCCESS, FAILURE, CANCELED
   public int progress; // 0..100
+  public FfprobeValue inprobe;
   public final List<OutputValue> outputs = Lists.newArrayList();
   /**
    * ctor
