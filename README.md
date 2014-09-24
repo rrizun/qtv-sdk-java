@@ -33,7 +33,7 @@ Submit a new job:
 JobValue newJobRequest = new JobValue("s3://quickfire-public/big_buck_bunny_1080p_h264.mov");
 
 OutputValue output = new OutputValue();
-outputValue.format = "mp4";
+output.format = "mp4";
 newJobRequest.outputs.add(output);
 
 JobValue newJobResponse = api.newJob(newJobRequest);
