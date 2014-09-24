@@ -16,6 +16,8 @@ List jobs:
 
 ```java
 ListJobsResponse listJobsResponse = api.listJobs();
+for (JobValue job : listJobsResponse.jobs)
+  out.println(job);
 ```
 
 Get specific job:
