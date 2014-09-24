@@ -3,6 +3,7 @@ package qtv;
 import java.util.*;
 
 import com.google.common.collect.*;
+import com.google.gson.*;
 
 /**
  * JobValue
@@ -43,5 +44,9 @@ public class JobValue {
    */
   public boolean isClosed() {
     return ImmutableSet.of("SUCCESS", "FAILURE", "CANCELED").contains(status);
+  }
+  @Override
+  public String toString() {
+    return new GsonBuilder().setPrettyPrinting().create().toJson(this);
   }
 }

@@ -92,6 +92,6 @@ public class FfprobeValue {
     return result;
   }
   public String toString() {
-    return new Gson().toJson(this);
+    return new GsonBuilder().setPrettyPrinting().create().toJson(this);
   }
 }

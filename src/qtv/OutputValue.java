@@ -5,6 +5,7 @@ import javax.script.*;
 import qtv.*;
 
 import com.google.common.base.*;
+import com.google.gson.*;
 
 public class OutputValue {
   public String output_id;
@@ -106,4 +107,10 @@ public class OutputValue {
 
   // output ffprobe result
   public FfprobeValue outprobe;
+  
+  @Override
+  public String toString() {
+    return new GsonBuilder().setPrettyPrinting().create().toJson(this);
+  }
+
 }
