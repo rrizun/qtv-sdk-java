@@ -9,7 +9,7 @@ Usage
 Create api client:
 
 ```java
-ApiClient api = new ApiClient("http://api.quickfire.tv/app/api/v1", "demo", "demo");
+ApiClient api = new ApiClient("http://api.quickfire.tv/app/api/v1", "myusername", "mypassword");
 ```
 
 List jobs:
