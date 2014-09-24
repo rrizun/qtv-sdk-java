@@ -4,6 +4,9 @@ import java.io.*;
 
 import qtv.api.*;
 
+/**
+ * qtv-sdk-java sample usage
+ */
 public class Main {
   static ApiClient api = new ApiClient("http://api.quickfire.tv/app/api/v1", "demo", "demo");
   public static void main(String[] args) throws Exception {
