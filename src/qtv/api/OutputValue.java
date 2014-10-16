@@ -2,15 +2,19 @@ package qtv.api;
 
 import javax.script.*;
 
-import qtv.*;
-
 import com.google.common.base.*;
 import com.google.gson.*;
 
 public class OutputValue {
   public String output_id;
   public String output_uri;
+  
   public String format;
+  public OutputValue format(String format) {
+    this.format = format;
+    return this;
+  }
+  
   public String width;
   public String height;
   
