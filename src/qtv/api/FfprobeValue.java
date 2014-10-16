@@ -57,8 +57,8 @@ public class FfprobeValue {
     public int height() {
       return Integer.parseInt(height);
     }
-    public int bit_rate() {
-      return (int) Double.parseDouble(bit_rate);
+    public double bit_rate() {
+      return (double) Double.parseDouble(bit_rate);
     }
   }
   public FormatValue format;
